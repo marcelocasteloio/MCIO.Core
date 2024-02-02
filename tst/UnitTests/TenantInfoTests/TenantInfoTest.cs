@@ -25,17 +25,19 @@ public class TenantInfoTest
         tenantInfoB.Code.Should().Be(existingCode);
         tenantCodeB.Should().Be(existingCode);
     }
+
     [Fact]
-    public void TenantInfo_Should_Implicited_Converted_From()
+    public void TenantInfo_Should_Invalid_If_Created_From_Default()
     {
         // Arrange
-        var existingCode = Guid.NewGuid();
+        var expectedIsValid = false;
+        var expectedCode = Guid.Empty;
 
-        // Act
-        var tenantInfo = TenantInfo.TenantInfo.FromExistingCode(existingCode);
+        // Arrange and Act
+        var tenantInfo = default(TenantInfo.TenantInfo);
 
         // Assert
-        tenantInfo.IsValid.Should().BeTrue();
-        tenantInfo.Code.Should().Be(existingCode);
+        tenantInfo.IsValid.Should().Be(expectedIsValid);
+        tenantInfo.Code.Should().Be(expectedCode);
     }
 }
