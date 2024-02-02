@@ -1,0 +1,6 @@
+@MCIO.Core.Samples.SampleApi_HostAddress = http://localhost:5248
+
+GET {{MCIO.Core.Samples.SampleApi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

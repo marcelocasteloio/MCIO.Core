@@ -1,0 +1,65 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{572A332D-4046-43A9-97ED-AB00551C2077}"
+	ProjectSection(SolutionItems) = preProject
+		build-local-script.ps1 = build-local-script.ps1
+		clear-local-script.ps1 = clear-local-script.ps1
+		images\icon.png = images\icon.png
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 - src", "1 - src", "{CB2B1E8B-3BC9-4C6F-938F-807DC53F0C94}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2 - tst", "2 - tst", "{93D92900-3476-44A8-92F5-BD6FA8F3A126}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3 - benchs", "3 - benchs", "{B549D5E9-E6BF-446C-9FE0-E4D9C1ED8D08}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4 - samples", "4 - samples", "{F0F1166A-BDD0-43CF-9723-9DDE8075A537}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MCIO.Core", "src\Core\MCIO.Core.csproj", "{E3F87F8D-9F82-4926-A67A-9957887195F8}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MCIO.Core.UnitTests", "tst\UnitTests\MCIO.Core.UnitTests.csproj", "{8933C1AD-7C84-4098-9622-B6EA8048F5FB}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MCIO.Core.Benchmarks", "benchs\Benchmarks\MCIO.Core.Benchmarks.csproj", "{21DF53DC-C187-4B11-9A7B-46C663E0FE42}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MCIO.Core.Samples.SampleApi", "samples\Samples.SampleApi\MCIO.Core.Samples.SampleApi.csproj", "{E3664987-2CB1-487B-B8CF-73C5AF89E7C4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E3F87F8D-9F82-4926-A67A-9957887195F8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E3F87F8D-9F82-4926-A67A-9957887195F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E3F87F8D-9F82-4926-A67A-9957887195F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E3F87F8D-9F82-4926-A67A-9957887195F8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8933C1AD-7C84-4098-9622-B6EA8048F5FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8933C1AD-7C84-4098-9622-B6EA8048F5FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8933C1AD-7C84-4098-9622-B6EA8048F5FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8933C1AD-7C84-4098-9622-B6EA8048F5FB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{21DF53DC-C187-4B11-9A7B-46C663E0FE42}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{21DF53DC-C187-4B11-9A7B-46C663E0FE42}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{21DF53DC-C187-4B11-9A7B-46C663E0FE42}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{21DF53DC-C187-4B11-9A7B-46C663E0FE42}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E3664987-2CB1-487B-B8CF-73C5AF89E7C4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E3664987-2CB1-487B-B8CF-73C5AF89E7C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E3664987-2CB1-487B-B8CF-73C5AF89E7C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E3664987-2CB1-487B-B8CF-73C5AF89E7C4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{E3F87F8D-9F82-4926-A67A-9957887195F8} = {CB2B1E8B-3BC9-4C6F-938F-807DC53F0C94}
+		{8933C1AD-7C84-4098-9622-B6EA8048F5FB} = {93D92900-3476-44A8-92F5-BD6FA8F3A126}
+		{21DF53DC-C187-4B11-9A7B-46C663E0FE42} = {B549D5E9-E6BF-446C-9FE0-E4D9C1ED8D08}
+		{E3664987-2CB1-487B-B8CF-73C5AF89E7C4} = {F0F1166A-BDD0-43CF-9723-9DDE8075A537}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B9E776EE-31D7-49A5-B253-57DE23E4DD6D}
+	EndGlobalSection
+EndGlobal
