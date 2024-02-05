@@ -6,7 +6,7 @@
 
 | Status | Nome | PT-BR |
 | :- | :- | :- |
-| :green_circle: Em construção | Benchmarks | [BENCHMARKS-PT.md](docs/BENCHMARKS-PT.md) |
+| :black_circle: Em construção | Benchmarks | [BENCHMARKS-PT.md](docs/BENCHMARKS-PT.md) |
 | :black_circle: Em construção | Decisões de design | [DESIGN-DECISIONS-PT.md](docs/DESIGN-DECISIONS-PT.md) |
 
 ## :package: Pacotes
